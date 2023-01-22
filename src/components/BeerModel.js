@@ -10,6 +10,7 @@ function BeerModel(props){
                 <div className="container" style={{display: 'flex', justifyContent: 'center'}}>
                     <p className="lead" style={{textAlign: 'justify', fontSize: '1em', width: '90%'}}>{beer.description}</p>
                 </div>
+                <p>{beer.brewers_tips}</p>
                 <p>{beer.contributed_by}</p>
             </div>
         </div>

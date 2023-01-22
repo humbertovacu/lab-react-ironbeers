@@ -37,3 +37,28 @@
   }
 }
 
+.form-floating {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.col {
+  padding-right: 30px;
+}
+
+.container-fluid{
+  margin-top: 20px;
+}
+
+#all-beers-search {
+  margin-bottom: 40px;
+}
+
+#homepage-div a{
+  text-decoration: none;
+  color: #E6E6EA;
+}
+
+body {
+  background-color: #FE4A49;
+}
