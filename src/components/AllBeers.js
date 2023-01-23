@@ -30,16 +30,17 @@ function AllBeers(){
            </div>
            {search.length !== 0 && beers.length === 0 && <p>We couldn't find this beer.</p>}
            {search.length === 0 && beers.length === 0 && <p>Loading...</p>}
+           <hr/>
            {beers.map(beer => {
             return(
-                <div key={beer._id} className="row align-items-start">
-                    <div className="col" style={{paddingBottom: '40px', width: '100%'}}>
+                <div key={beer._id} className="row" style={{display: 'flex', alignItems: 'center', justifyContent:'space-evenly', height:'250px'}}  >
+                    <div className="col" style={{paddingBottom: '40px', paddingLeft: '40px', paddingTop: '20px', width: '100%'}}>
                         <img src={beer.image_url} width={'40vw'} alt={beer.name}/>
                     </div>
-                    <div className="col">
-                        <Link to={`/beers/${beer._id}`}><h4 className="h4" style={{textAlign:'left'}}>{beer.name}</h4></Link>
-                        <h6 className="h6" style={{textAlign:'left'}}>{beer.tagline}</h6>
-                        <p style={{textAlign:'left'}}>Created by: {beer.contributed_by}</p>
+                    <div className="col" style={{marginRight: '40px'}}>
+                        <Link to={`/beers/${beer._id}`} className='all-beers-link'><h4 className="h4" style={{textAlign:'left', color: '#fed766'}}>{beer.name}</h4></Link>
+                        <h6 className="h6" style={{textAlign:'left', color: '#e6e6ea'}}>{beer.tagline}</h6>
+                        <p style={{textAlign:'left', color: '#f4f4f8'}}>Created by: {beer.contributed_by}</p>
                     </div> 
                     <hr/> 
                 </div>

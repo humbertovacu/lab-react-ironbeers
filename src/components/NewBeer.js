@@ -22,7 +22,7 @@ function NewBeer(){
     }
 
     return(
-        <div>
+        <div style={{marginTop: '30px'}}>
             <form id='new-beer-form' onSubmit={handleSubmit}>
                 <div className='form-floating mb-3'>
                         <input type='text' name='name' className='form-control' placeholder="Delicious Beer" onChange={handleChange}></input>

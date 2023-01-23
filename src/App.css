@@ -42,9 +42,9 @@
   margin: 0 auto;
 }
 
-.col {
-  padding-right: 30px;
-}
+/* .col {
+  padding-right: 50px;
+} */
 
 .container-fluid{
   margin-top: 20px;
@@ -61,4 +61,53 @@
 
 body {
   background-color: #FE4A49;
+}
+
+col img{
+  padding-left: 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: #fe9a9a;
+}
+
+.ind-beer-div{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.ind-beer-div img{
+  margin-bottom: 30px;
+}
+
+.ind-beer-div h3 {
+  color: #fed766;
+  margin-bottom: 20px;
+}
+
+.ind-beer-div h6{
+  color: #E6E6EA;
+}
+
+.category-div{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.ind-beer-lead{
+  color: #f4f4f8;
+}
+
+#new-beer-form button{
+  background-color: #FED766;
+  border: 0;
+}
+
+#new-beer-form button:hover{
+  background-color: #fe9a9a;
 }
