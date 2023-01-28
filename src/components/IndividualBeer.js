@@ -1,12 +1,14 @@
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import BeerModel from "./BeerModel";
 
 
-function IndividualBeer(props){
+function IndividualBeer(){
+
+    const [beer, setBeer] = useState('');
+
     const { id } = useParams();
-    const { beer, setBeer } = props;
     useEffect(()=>{
         axios.get(`https://ih-beers-api2.herokuapp.com/beers/${id}`)
         .then(response => setBeer(response.data))

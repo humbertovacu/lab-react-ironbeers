@@ -1,9 +1,9 @@
 import axios from "axios";
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import BeerModel from "./BeerModel";
 
-function RandomBeer(props){
-    const { beer, setBeer } = props;
+function RandomBeer(){
+    const [beer, setBeer] = useState('');
 
     useEffect(()=> {
         axios.get('https://ih-beers-api2.herokuapp.com/beers/random')
